@@ -2,10 +2,10 @@ var baseUrl = ''
 
 switch (process.env.NODE_ENV) {
   case 'development':
-    baseUrl = '/api/'
+    baseUrl = 'http://stooop.top/'
     break
   case 'production':
-    baseUrl = 'http://gdjt.vieword.club/'
+    baseUrl = 'http://stooop.top/'
     break
 }
 

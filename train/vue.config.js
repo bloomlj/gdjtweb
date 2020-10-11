@@ -12,7 +12,7 @@ module.exports = {
     hotOnly: false,
     proxy: {
       '/api': {
-        target: 'http://gdjt.vieword.club/',
+        target: 'http://stooop.top/',
         changeOrigin: true,
         pathRewrite: {
           '^/api': ''
