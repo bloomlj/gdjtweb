@@ -9,10 +9,10 @@ let loadinginstace
 /* axios 请求拦截器 */
 axios.interceptors.request.use(config => { // 这里面写每次请求的配置内容
   // 判断Storage中是否存在token
-  if (localStorage.getItem('token')) {
-    // 将token放在请求的头部
-    config.headers.token = `${localStorage.getItem('token')}`
-  }
+  // if (localStorage.getItem('token')) {
+  //   // 将token放在请求的头部
+  //   config.headers.token = `${localStorage.getItem('token')}`
+  // }
   loadinginstace = Loading.service({ fullscreen: true }) // 打开loading
   return config
 }, err => {
@@ -114,7 +114,7 @@ function checkStatus (response) {
           console.log('这里是返回成功，登陆失效的处理')
         }
       })
-      localStorage.removeItem('token')
+      //localStorage.removeItem('token')
       router.push({ name: 'login' })
     } else {
       return response
