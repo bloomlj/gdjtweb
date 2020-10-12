@@ -178,13 +178,13 @@ export default {
       // 时间轴的时间选择
       borderLeft: 0,
       // img2的宽度和高度
-      img2Hei: 165,
+      img2Hei: 165+40,
       // 人体大小的选择
       peoSel: 1,
       // 视线的开关
       ken: false,
       // 机器的抬升高度
-      machine: 171,
+      machine: 0,
       // 当前时间段
       timeSlot: 1,
       activeName: 'front',
@@ -354,9 +354,9 @@ export default {
     sel_size (s) {
       this.peoSel = s
       if (s === 1) {
-        this.img2Hei = 165
+        this.img2Hei = 165+40
       } else {
-        this.img2Hei = 174
+        this.img2Hei = 174+50
       }
     },
     // 打开视线的开关
@@ -998,14 +998,14 @@ export default {
             overflow: hidden;
             .img1{
               width: 338px;
-              height: 108px;
+              /*height: 108px;*/
               position: absolute;
               bottom: 0;
               left: 30px;
             }
             .img2{
-              // width: 46px;
-              // height: 226px;
+              /*width: 46px;*/
+              height: 226px;
               width: auto;
               position: absolute;
               bottom: 0;

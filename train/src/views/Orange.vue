@@ -299,9 +299,8 @@ export default {
                 }
               }
               .estimate-left-img{
-                width: 357px;
-                // height: 127px;
-                height: auto;
+                /*width: 357px;*/
+                height: 127px;
                 padding-bottom: 20px;
                 position: absolute;
                 left: 50%;

@@ -114,7 +114,7 @@ function checkStatus (response) {
           console.log('这里是返回成功，登陆失效的处理')
         }
       })
-      //localStorage.removeItem('token')
+      localStorage.removeItem('token')
       router.push({ name: 'login' })
     } else {
       return response
