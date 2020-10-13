@@ -6,6 +6,9 @@
     <!-- 右边界面 -->
     <div class="right">
       <div class="dev">
+      <div style="text-align:left; margin-bottom:5px;">
+        <el-button @click="revert" type="primary" plain>返回</el-button>
+      </div>
         <div class="top">
             <div class="image">
               <img :src="deviceData?deviceData.picture:''" alt="">

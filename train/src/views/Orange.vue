@@ -3,9 +3,13 @@
   <div id='Orange'>
     <!-- 导航 -->
     <v-Nav :navShow='1' @next='next' @revert='revert'></v-Nav>
+
     <!-- 右边界面 -->
     <div class="right">
       <div class='ora'>
+      <div style="text-align:left; margin-bottom:5px;">
+        <el-button @click="revert" type="primary" plain>返回</el-button>
+      </div>
         <!-- 厂房 -->
         <div class='Workshop'>
           <div class="node">
@@ -51,7 +55,12 @@
             </div>
           </div>
         </div>
+        <div style="text-align:right;margin-top:15px;">
+          <el-button @click="next" type="primary" plain>下一步</el-button>
+        </div>
       </div>
+      
+
     </div>
   </div>
 </template>

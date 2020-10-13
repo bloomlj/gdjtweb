@@ -6,6 +6,9 @@
     <!-- 右边界面 -->
     <div class="right">
       <div class='ope'>
+      <div style="text-align:left; margin-bottom:5px;">
+        <el-button @click="revert" type="primary" plain>返回</el-button>
+      </div>
         <!-- 时间框 -->
         <div class="operate-time">
           <!-- 时间轴 -->
@@ -117,11 +120,13 @@
             <div class="act-r-height">
               <p>设备抬升高度<input type="text" v-model="machine">mm</p>
               <!-- <p>人员检修台面<input type="text" v-model="staff">mm</p> -->
+              <el-button @click="next" type="primary" plain>下一步</el-button>
             </div>
           </div>
         </div>
-        <!-- <div class="horizon">
-        </div> -->
+        <div class="horizon">
+        
+        </div>
       </div>
     </div>
     <!-- 标签 -->
